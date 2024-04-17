@@ -1,0 +1,80 @@
+[
+  {
+    //游戏关卡ID
+    "check": 1,
+    //道具
+    "goods": [
+      {
+        //道具ID
+        "id": 1,
+        //道具名称
+        "name": "1_1",
+        "url": "",
+        //被接到加分
+        "score": 1,
+        //未被接到加分
+        "deduct": -1,
+        //接到特效名称
+        "specialEfficacy": "JieShou",
+        //接到音效名称
+        "audio": "audio_JieShou",
+        //下降速度   越大越快
+        "speed": 10
+      },
+      {
+        "id": 2,
+        "name": "3_2",
+        "url": "",
+        "score": -5,
+        "deduct": 0,
+        "specialEfficacy": "BianPao",
+        "audio": "audio_BianPao",
+        "speed": 10
+      }
+    ],
+    //本关卡生成间隔  越小  生成的越快
+    "createTime": 0.6
+  },
+  {
+    "check": 2,
+    "goods": [
+      {
+        "id": 1,
+        "name": "2_1",
+        "url": "",
+        "score": 1,
+        "deduct": -1,
+        "specialEfficacy": "CaiQiu",
+        "audio": "audio_CaiQiu",
+        "speed": 10
+      }
+    ],
+    "createTime": 0.6
+  },
+  {
+    "check": 3,
+    "goods": [
+      {
+        "id": 1,
+        "name": "3_1",
+        "url": "",
+        "score": 2,
+        "deduct": -2,
+        "specialEfficacy": "CaiQin",
+        "audio": "audio_CaiQin",
+        "speed": 2
+      },
+      {
+        "id": 2,
+        "name": "3_2",
+        "url": "",
+        "score": -5,
+        "deduct": 0,
+        "specialEfficacy": "BianPao",
+        "audio": "audio_BianPao",
+        "speed": 10
+      }
+    ],
+    "createTime": 0.6
+  }
+]

@@ -1,0 +1,1435 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MrJi</name>
+    </assembly>
+    <members>
+        <member name="T:MrJi.ApplicationProgram.Check">
+            <summary>
+            检测应用平台
+            </summary>
+        </member>
+        <member name="T:MrJi.Example.ExampleLocalPath">
+            <summary>
+            操作本地路径   读写
+            </summary>
+        </member>
+        <member name="P:MrJi.Example.ExampleLocalPath.EnvironmentCurrentDirectory">
+            <summary>
+            Environment.CurrentDirectory
+            </summary>
+        </member>
+        <member name="P:MrJi.Example.ExampleLocalPath.DataPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MrJi.Example.ExampleLocalPath.LocalReading_LocalDataFloder">
+            <summary>
+            本地只读   LoaclDataFloder
+            </summary>
+        </member>
+        <member name="P:MrJi.Example.ExampleLocalPath.LocalReadingAndWriting_LocalDataFloder">
+            <summary>
+            本地读写文件路径
+            MobileDeviceLocalData
+            WindowsPlayerLocalData
+            </summary>
+        </member>
+        <member name="P:MrJi.Example.ExampleLocalPath.StreamingAssetFloder">
+            <summary>
+            只读    StreamingAsset  文件夹
+            </summary>
+        </member>
+        <member name="T:MrJi.Example.ExampleInformationVerification">
+            <summary>
+            信息验证
+            </summary>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsTelephone(System.String)">
+            <summary>
+            验证电话号码
+            </summary>
+            <param name="str_telephone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsHandset(System.String)">
+            <summary>
+             验证手机号码
+            </summary>
+            <param name="str_handset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsIDcard(System.String)">
+            <summary>
+            验证身份证号
+            </summary>
+            <param name="str_idcard"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsNumber(System.String)">
+            <summary>
+            验证输入为阿拉伯数字
+            </summary>
+            <param name="str_number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsPostalcode(System.String)">
+            <summary>
+            验证邮编
+            </summary>
+            <param name="str_postalcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleInformationVerification.IsJson(System.String)">
+            <summary>
+            是否是json   获取是否是正确的json
+            </summary>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.MainThread(UnityEngine.MonoBehaviour,System.Action,System.Single)">
+            <summary>
+            延迟执行主线程消息
+            </summary>
+            <param name="mono">MonoBehaviour</param> 
+            <param name="_ActionMsg">延迟内容</param>
+            <param name="DelayTime">延迟时间</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.UGUICenterManager(UnityEngine.Transform,System.Nullable{UnityEngine.Vector3},MrJi.Model.Data_Edge)">
+            <summary>
+            配置生成的UI 锚点
+            </summary>
+            <param name="UI"></param>
+            <param name="Scale">null = Vector.one</param>
+            <param name="m_Edge"> UI 界面上下左右边缘空隙</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.UGUIScrollRectReset(UnityEngine.UI.ScrollRect,UnityEngine.Vector2)">
+            <summary>
+            ScrollRect 列表生成结束后配置位置为  置顶
+            </summary>
+            <param name="UIScrollRect">ScrollRect Transform</param>
+            <param name="vector">这个值为Vector2.zero或者Vector2.one</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ImageManager(UnityEngine.UI.Image,System.Single,System.Single,UnityEngine.Sprite)">
+            <summary>
+            给Image 赋图片 （固定Image大小，内置Image sprite设定图片不超出固定范围自适应）
+            </summary>
+            <param name="ToImage">被赋值的Image</param>
+            <param name="Width">Image的宽度</param>
+            <param name="Height">Imaga的高度</param>
+            <param name="SpritePictrue">Sprite图片</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ImageManager(UnityEngine.Sprite,System.Single,System.Single)">
+            <summary>
+            被赋值 Image  经过处理后得到的最终Image的大小
+            </summary>
+            <param name="Width">Image的宽度</param>
+            <param name="Height">Imaga的高度</param>
+            <param name="SpritePictrue">SpritePictrue</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ImageManager(UnityEngine.Texture2D,System.Single,System.Single)">
+            <summary>
+            根据限制得到新的图片大小   返回值  item1 = width    item2 = height   
+            </summary>
+            <param name="TexturePictrue"></param>
+            <param name="Width"></param>
+            <param name="Height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ImageManager(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            根据限制得到新的图片大小   返回值  item1 = width    item2 = height   
+            </summary>
+            <param name="TextureWidth"></param>
+            <param name="TextureHeight"></param>
+            <param name="Width"></param>
+            <param name="Height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ImageManager(UnityEngine.UI.Image,MrJi.Model.Data_Image)">
+            <summary>
+            给Image 赋图片 （固定Image大小，内置Image sprite设定图片不超出固定范围自适应）
+            </summary>
+            <param name="ToImage">被赋值的Image</param>
+            <param name="Data">图片信息</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.get_TextureThumbnail(UnityEngine.Texture2D,System.Int32)">
+            <summary>
+            获取缩略图(通过当前Texture宽高同时除以倍数)
+            </summary>
+            <param name="source"></param>
+            <param name="reduce">缩小倍数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.get_TextureThumbnail(UnityEngine.Texture2D)">
+            <summary>
+            获取缩略图 （通过Texture大小，自适应配置缩略图） 缩小到 宽高的最小值为 256
+            </summary>
+            <param name="source"></param>
+            <param name="reduce">缩小倍数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ToSprite(UnityEngine.Texture2D)">
+            <summary>
+            
+            </summary>
+            <param name="texture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ToSprite(UnityEngine.Texture)">
+            <summary>
+            
+            </summary>
+            <param name="texture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Texture2DToReadWrite(UnityEngine.Texture2D)">
+            <summary>
+            打开Texture2D的读写
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ToCubemap(UnityEngine.Texture2D)">
+            <summary>
+            使用Panorado全景图获取CubeMap          全景图转CubeMap 
+            </summary>
+            <param name="m_Texture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ToTexture2D(UnityEngine.Cubemap)">
+            <summary>
+            将CubeMap转为普通贴图
+            </summary>
+            <param name="cubemap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.FlipPixels(UnityEngine.Texture2D,System.Boolean,System.Boolean)">
+            <summary>
+            水平/垂直反转帖图象素
+            </summary>
+            <param name="texture"></param>
+            <param name="flipX"></param>
+            <param name="flipY"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ObjectMakeZero(UnityEngine.GameObject)">
+            <summary>
+            重置生成的 Transform postion   ratitaon  scale
+            </summary>
+            <param name="Trans"></param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.ObjectMakeZero(UnityEngine.Transform)">
+            <summary>
+             重置生成的 Transform postion   ratitaon  scale
+            </summary>
+            <param name="Trans"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.IsNull``1(``0)">
+            <summary>
+            是否为空
+            </summary>
+            <param name="package"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_Bounds(UnityEngine.GameObject)">
+            <summary>
+            读取AABB值，模型的格子
+            </summary>
+            <param name="Game"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_Bounds(UnityEngine.GameObject[])">
+            <summary>
+            读取AABB值，模型的格子
+            </summary>
+            <param name="Game"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_Bounds(UnityEngine.Transform)">
+            <summary>
+            读取AABB值，模型的格子
+            </summary>
+            <param name="Tran"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_Bounds(UnityEngine.Transform[])">
+            <summary>
+            读取AABB值，模型的格子
+            </summary>
+            <param name="Tran"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Create_ModelCollider(UnityEngine.GameObject,UnityEngine.Material)">
+            <summary>
+            生成模型碰撞
+            </summary>
+            <param name="Game"></param>
+            <param name="m_Material">材质球</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_TranRotateVector3(UnityEngine.Transform)">
+            <summary>
+            获取到旋转的正确数值    获取物体的旋转角度    0-∞      0+无穷
+            </summary>
+            <param name="Tran"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.QuaternionToEulerAngles(UnityEngine.Quaternion)">
+            <summary>
+            四元数转Vector3
+            </summary>
+            <param name="m_Quaternion"></param>
+            <returns>返回 vector的    x  y  z数组</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.GetOrAddComponent``1(UnityEngine.GameObject)">
+            <summary>
+            添加或读取组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="game"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.GetOrAddComponent``1(UnityEngine.Transform)">
+            <summary>
+            添加或读取组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="Tran"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.UGUIReturnOnClickBtton">
+            <summary>
+            获取被点击的UI 按钮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.DestoryChild(UnityEngine.Transform)">
+            <summary>
+            删除指定 Transform  下的所有子物体
+            </summary>
+            <param name="Parent">Transform</param>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.GetChildPath(UnityEngine.Transform,UnityEngine.Transform)">
+            <summary>
+            返回子物体相对于整个物体的路径
+            Parent
+               Cube
+                  Child
+            </summary>
+            <param name="TranParent">物体 Parent</param>
+            <param name="ChildTran">子物体 Child</param>
+            <returns>路径  Cube/Child</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.FindDeepChild(UnityEngine.Transform,System.String)">
+            <summary>
+            通过名称，获取模型下组下，与指定名称一致的模型名称 对应的模型
+            </summary>
+            <param name="Tran">模型</param>
+            <param name="name">指定名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.FindDeepChild(UnityEngine.GameObject,System.String)">
+            <summary>
+            通过名称，获取模型下组下，与指定名称一致的模型名称 对应的模型
+            </summary>
+            <param name="Game">模型</param>
+            <param name="name">指定名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Set_VectorToArray(UnityEngine.Vector2)">
+            <summary>
+            Vector2 To Float[]
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Set_VectorToArray(UnityEngine.Vector3)">
+            <summary>
+            Vector3 To Float[]
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Set_VectorToArray(UnityEngine.Vector4)">
+            <summary>
+            Vector4 To Float[]
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Set_QuaternionToArray(UnityEngine.Quaternion)">
+            <summary>
+            Quaternion To Float[]
+            </summary>
+            <param name="quaternion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_ArrayToVector2(System.Single[])">
+            <summary>
+            Float[] To Vector2
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_ArrayToVector3(System.Single[])">
+            <summary>
+            Float[] To Vector3
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_ArrayToVector4(System.Single[])">
+            <summary>
+            Float[] To Vector4
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleUnity.Get_ArrayToQuaternion(System.Single[])">
+            <summary>
+            Float[] To Quaternion
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MrJi.Example.ExampleView">
+            <summary>
+            数据处理
+            </summary>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.getVariableName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            获得变量名                   Print.Log(getVariableName(()=> "变量"))
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ImageByteIsPNG(System.Byte[])">
+            <summary>
+            判断Byte[]是否是png
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ImageByteIsJPG(System.Byte[])">
+            <summary>
+            判断Byte[]是否是jpg
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ImageByteIsJPEG(System.Byte[])">
+            <summary>
+            判断Byte[]是否是jpeg
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ImageByteIsTGA(System.Byte[])">
+            <summary>
+            判断Byte[]是否是tga
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ImageByteSuffix(System.Byte[])">
+            <summary>
+            获得图片 Byte的文件后缀
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.IsNull(System.Object)">
+            <summary>
+            是否为空
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="_object"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.StrToEnum``1(System.String)">
+            <summary>
+            字符串转枚举值
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+            <param name="Item">要转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.StringManager``1(System.String,System.String[])">
+            <summary>
+            删除字符串中不要的字符  
+            </summary>
+            <param name="RawString">要操作的字符串</param>
+            <param name="ESC">要删除的字符数组</param>
+            <returns>返回新的字符串</returns>
+        </member>
+        <member name="P:MrJi.Example.ExampleView.Guid">
+            <summary>
+            返回随机数  可用于作为表ID   String 
+            </summary>
+            <returns>返回随机生成的唯一字符串</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_StringExistChineseChars(System.String)">
+            <summary>
+            判断字符串中是否存在中文，如果存在，将中文字符返回
+            </summary>
+            <param name="value"></param>
+            <returns>不存在中文字符，返回空；存在中文字符，返回中文字符集合</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_ChineseStringToPinYing(System.String,System.String)">
+            <summary>
+            字符串中英文混合，将中文转拼音，其余的原样返回，但是空格会改为下划线
+            </summary>
+            <param name="String"></param>
+            <param name="NotFound">字典中查不到的话，用什么代替  自定义,如果不定义，则程序自主定义</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_ChineseCharToPinYing(System.Char,System.String)">
+            <summary>
+            中文字符转拼音  首字母直接大写
+            </summary>
+            <param name="Value"></param>
+            <param name="NotFound">字典中查不到的话，用什么代替  自定义,如果不定义，则程序自主定义</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_CheckChinese(System.Char)">
+            <summary>
+            用正则表达式判断字符是不是汉字 连同中文标点
+            </summary>
+            <param name="value">待判断字符</param>
+            <returns>true是 false不是</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_CheckPunctuation(System.Char)">
+            <summary>
+            用正则表达式判断字符是不是标点符号
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Get_CheckChinesePunctuation(System.Char)">
+            <summary>
+            判断是否是中文标点符号
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Remove``1(System.Collections.Generic.Queue{``0},System.Object)">
+            <summary>
+            删除Queue内的指定元素
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="m_Queue"></param>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.HtmlToString(System.String)">
+            <summary>
+             将给定的HTML转换为纯文本并返回结果。
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.AESEncrypt(System.String)">
+            <summary>
+            AES加密算法
+            </summary>
+            <param name="plainText">明文字符串</param>
+            <returns>将加密后的密文转换为Base64编码，以便显示</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.AESDecrypt(System.String,System.Text.Encoding)">
+            <summary>
+            AES解密
+            </summary>
+            <param name="showText">密文字符串</param>
+            <param name="encoding">密文字符串</param>
+            <returns>返回解密后的明文字符串</returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.DESEncrypt(System.String,System.Text.Encoding)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="value"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.DESDecrypt(System.String,System.Text.Encoding)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="value"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Base64Encode(System.String,System.Text.Encoding)">
+            <summary>
+            base64编码
+            </summary>
+            <param name="value"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.Base64Decode(System.String,System.Text.Encoding)">
+            <summary>
+            base64解码
+            </summary>
+            <param name="value"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ByteEncrypt(System.Byte[])">
+            <summary>
+            Byte[] 加密
+            </summary>
+            <param name="buffer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.ByteDecrypt(System.Byte[])">
+            <summary>
+            Byte[] 解密
+            </summary>
+            <param name="buffer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.MD5(System.String,System.Text.Encoding)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.GetString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            byte to string
+            </summary>
+            <param name="byteData"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.GetJson(System.Object)">
+            <summary>
+            object to json
+            </summary>
+            <param name="objectData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.GetObject``1(System.String)">
+            <summary>
+            json to object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.GetObject``1(System.Byte[],System.Text.Encoding)">
+            <summary>
+            bytes to object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="bytesjson"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Example.ExampleView.GetBytes(System.String,System.Text.Encoding)">
+            <summary>
+            
+            </summary>
+            <param name="Data"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MrJi.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="T:MrJi.Database.MySqlManager">
+            <summary>
+            MySql数据库
+            </summary>
+        </member>
+        <member name="F:MrJi.Database.MySqlManager.mySqlConnection">
+            <summary>
+            连接类对象
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="_IP">IP地址</param>
+            <param name="_UserName">用户名</param>
+            <param name="_Password">密码</param>
+            <param name="_DataBaseName">数据库名称</param>
+            <param name="_Port">连接端口号</param>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.OpenSql">
+            <summary>
+            打开数据库
+            </summary>
+            <returns>item1 连接是否成功；item2 信息</returns>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.Close">
+            <summary>
+            关闭数据库
+            </summary>
+        </member>
+        <member name="P:MrJi.Database.MySqlManager.m_ConnectionState">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.InsertIntoSingle(System.String)">
+            <summary>
+            添加数据  修改数据   删除数据
+            </summary>
+            <param name="Sql"></param>
+            <param name="islog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.SingleSelectWhere``1(System.String)">
+            <summary>
+            查询表数据
+            </summary>
+            <typeparam name="T">类数组</typeparam>
+            <param name="sql"></param>
+            <param name="islog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Database.MySqlManager.QuerySet(System.String)">
+            <summary>    
+            执行Sql语句     //只用这个方法即可     
+            </summary>  
+            <param name="sqlString">sql语句</param>  
+            <returns></returns>  
+        </member>
+        <member name="T:MrJi.Database.Operate">
+            <summary>
+            数据库操作信息
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.Operate.Get_ConnectMessage(MrJi.Database.OperateMessage)">
+            <summary>
+            获取连接失败的具体信息
+            </summary>
+            <param name="m_OperateMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MrJi.Database.OperateMessage">
+            <summary>
+            操作数据库结果
+            </summary>
+        </member>
+        <member name="F:MrJi.Database.OperateMessage.success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:MrJi.Database.OperateMessage.faile">
+            <summary>
+            失败    写入数据时   重复ID
+            </summary>
+        </member>
+        <member name="F:MrJi.Database.OperateMessage.error">
+            <summary>
+            数据库处于未解锁状态
+            </summary>
+        </member>
+        <member name="T:MrJi.Database.SqliteManager">
+            <summary>
+            Sqlite数据库
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.SqliteManager.#ctor(System.String,System.String)">
+            <summary>
+            构造赋值 配置数据库  数据库路径PC Application.streamingAssetsPath + "/" + DatabaseName  安卓Application.persistentDataPath + "/" + DatabaseName 
+            </summary>
+            <param name="_DatabaseName"></param>
+            <param name="_Path"></param>
+        </member>
+        <member name="M:MrJi.Database.SqliteManager.Open_DB">
+            <summary>
+            打开数据库
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.SqliteManager.Close_DB">
+            <summary>
+            关闭数据库
+            </summary>
+        </member>
+        <member name="M:MrJi.Database.SqliteManager.InsertIntoSingle(System.String)">
+            <summary>
+            本地数据添加，修改，删除      返回处理结果，成功    失败     string是失败时的错误信息
+            </summary>
+            <param name="Sql">SQL语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Database.SqliteManager.SingleSelectWhere``1(System.String)">
+            <summary>
+            查询数据库
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="Sql">sql语句</param>
+        </member>
+        <member name="T:MrJi.Event.EventManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MrJi.Event.EventManager.Update_AudioSourceVolume">
+            <summary>
+            更新AudioSource音量    音量     是否是循环的（非循环是音效，循环的是背景音乐）
+            </summary>
+        </member>
+        <member name="F:MrJi.Event.AudioSourceType.BackGroundMusic">
+            <summary>
+            背景音乐
+            </summary>
+        </member>
+        <member name="F:MrJi.Event.AudioSourceType.SoundEffect">
+            <summary>
+            音效
+            </summary>
+        </member>
+        <member name="F:MrJi.Event.AudioSourceType.VoiceChat">
+            <summary>
+            语音聊天
+            </summary>
+        </member>
+        <member name="F:MrJi.Event.AudioSourceType.comment">
+            <summary>
+            解说
+            </summary>
+        </member>
+        <member name="T:MrJi.Model.Data_Color">
+            <summary>
+            颜色
+            </summary>
+        </member>
+        <member name="M:MrJi.Model.Data_Color.#ctor(UnityEngine.Color)">
+            <summary>
+            构造颜色信息
+            </summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:MrJi.Model.Data_Color.Get_Color">
+            <summary>
+            读取颜色信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MrJi.Model.Data_Edge">
+            <summary>
+            UI 界面上下左右边缘空隙
+            </summary>
+        </member>
+        <member name="M:MrJi.Model.Data_Edge.#ctor">
+            <summary>
+            默认参数 0
+            </summary>
+        </member>
+        <member name="M:MrJi.Model.Data_Edge.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="Up">上</param>
+            <param name="Down">下</param>
+            <param name="Left">左</param>
+            <param name="Right">右</param>
+        </member>
+        <member name="T:MrJi.Model.Data_Location">
+            <summary>
+            位置信息
+            </summary>
+        </member>
+        <member name="M:MrJi.Model.Data_Location.#ctor(UnityEngine.Transform,System.Boolean)">
+            <summary>
+            获取物体的Location
+            </summary>
+            <param name="Tran">Transform</param>
+            <param name="isForword">是否是世界坐标</param>
+        </member>
+        <member name="P:MrJi.Model.Data_Location.Default">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="T:MrJi.Tool.HtmlToText">
+            <summary>
+            Converts HTML to plain text.
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.Convert(System.String)">
+            <summary>
+            将给定的HTML转换为纯文本并返回结果。
+            </summary>
+            <param name="html">要转换的HTML</param>
+            <returns>结果纯文本</returns>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.ParseTag(System.Boolean@)">
+            <summary>
+            属于当前标签的所有字符，并返回关于该标签的信息
+            </summary>
+            <param name="selfClosing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.EatInnerContent(System.String)">
+            <summary>
+            使用当前标记的内部内容
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="P:MrJi.Tool.HtmlToText.EndOfText">
+            <summary>
+            如果当前位置在字符串的末尾，则返回true
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.Peek">
+            <summary>
+            返回当前位置的字符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.MoveAhead">
+             <summary>
+            安全地前进到当前位置的下一个字符 
+             </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.EatWhitespace">
+            <summary>
+            将当前位置移动到下一个非空白字符。
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.EatWhitespaceToNextLine">
+            <summary>
+            将当前位置移动到下一个非空白字符或下一行的开头，以先到者为准
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.EatQuotedValue">
+            <summary>
+            将当前位置移过引用值
+            </summary>
+        </member>
+        <member name="T:MrJi.Tool.HtmlToText.TextBuilder">
+            <summary>
+            帮助消除多余空白的StringBuilder类。
+            </summary>
+        </member>
+        <member name="P:MrJi.Tool.HtmlToText.TextBuilder.Preformatted">
+            <summary>
+            通常，多余的空白字符会被丢弃。如果此属性设置为true，则它们会原封不动地通过。
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.TextBuilder.Clear">
+            <summary>
+            清除所有当前文本。
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.TextBuilder.Write(System.String)">
+            <summary>
+            将给定的字符串写入输出缓冲区。
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.TextBuilder.Write(System.Char)">
+            <summary>
+            将给定字符写入输出缓冲区。
+            </summary>
+            <param name="c">Character to write</param>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.TextBuilder.FlushCurrLine">
+            <summary>
+            将当前行追加到输出缓冲区
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.HtmlToText.TextBuilder.ToString">
+            <summary>
+            以字符串形式返回当前输出。
+            </summary>
+        </member>
+        <member name="T:MrJi.Tool.INIParser">
+            <summary>
+            读取 .ini文件
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.error">
+            <summary>
+            错误:在有错误的情况下，这将被更改为1以外的某个值
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_Lock">
+            <summary>
+            锁定文件和本地缓存的线程安全访问
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_iniString">
+            <summary>
+            字符串表示Ini
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_AutoFlush">
+            <summary>
+            自动冲洗标志
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_Sections">
+            <summary>
+            本地缓存
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.INIParser.m_CacheModified">
+            <summary>
+            本地缓存修改标志
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.Open(System.String)">
+            <summary>
+            通过路径打开ini文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.OpenFromString(System.String)">
+            <summary>
+            从字符串打开ini文件
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.Initialize(System.String,System.Boolean)">
+            <summary>
+            读取ini文件内容
+            </summary>
+            <param name="iniString"></param>
+            <param name="AutoFlush"></param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.Close">
+            <summary>
+            关闭，保存对ini文件的所有更改
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ParseSectionName(System.String)">
+            <summary>
+            解析部分名称
+            </summary>
+            <param name="Line">类名称，也就是  []  里面的名称   </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ParseKeyValuePair(System.String,System.String@,System.String@)">
+            <summary>
+            解析键+值对
+            </summary>
+            <param name="Line">类名称，也就是  []  里面的名称</param>
+            <param name="Key">类属性</param>
+            <param name="Value">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.isComment(System.String)">
+            <summary>
+            如果一行既不是SectionName也不是key+value对，那么它就是一个注释
+            </summary>
+            <param name="Line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.Refresh">
+            <summary>
+            将文件内容读入本地缓存
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.IsSectionExists(System.String)">
+            <summary>
+            检查部分类是否存在
+            </summary>
+            <param name="SectionName">类型名称  [] </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.IsKeyExists(System.String,System.String)">
+            <summary>
+            检查类下是否有指定属性
+            </summary>
+            <param name="SectionName">类型名称  []</param>
+            <param name="Key">属性key</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.SectionDelete(System.String)">
+            <summary>
+            删除某一类名  []
+            </summary>
+            <param name="SectionName">类型名称  []</param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.KeyDelete(System.String,System.String)">
+            <summary>
+            删除类名下某一参数
+            </summary>
+            <param name="SectionName">类名  []</param>
+            <param name="Key">属性 key</param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.String)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value </param>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.EncodeByteArray(System.Byte[])">
+            <summary>
+            编码字节数组
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.DecodeByteArray(System.String)">
+            <summary>
+            解码字节数组
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.String)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Boolean)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Int32)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Int64)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Double)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Single)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.Byte[])">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.ReadValue(System.String,System.String,System.DateTime)">
+            <summary>
+            读取ini文件内容  如果ini文件中没有找到指定key,就使用程序定义的value的默认参数
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="DefaultValue">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.Boolean)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.Int32)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.Int64)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.Double)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.Byte[])">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.INIParser.WriteValue(System.String,System.String,System.DateTime)">
+            <summary>
+            写入ini文件内容
+            </summary>
+            <param name="SectionName">类型名称   []</param>
+            <param name="Key">属性   key</param>
+            <param name="Value">属性 value  </param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.Tool.JsonManager.GetValueLength(System.String,System.Boolean,System.Int32@)">
+            <summary>
+            获取值的长度（当Json值嵌套以"{"或"["开头时）
+            </summary>
+        </member>
+        <member name="T:MrJi.Tool.JsonManager.CharState">
+            <summary>
+            字符状态
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.JsonManager.CharState.arrayStart">
+            <summary>
+            数组开始【仅第一开头才算】，值嵌套的以【childrenStart】来标识。
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.JsonManager.CharState.state">
+            <summary>
+            【0 初始状态，或 遇到“,”逗号】；【1 遇到“：”冒号】
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.JsonManager.CharState.keyStart">
+            <summary>
+            【-1 取值结束】【0 未开始】【1 无引号开始】【2 单引号开始】【3 双引号开始】
+            </summary>
+        </member>
+        <member name="F:MrJi.Tool.JsonManager.CharState.valueStart">
+            <summary>
+            【-1 取值结束】【0 未开始】【1 无引号开始】【2 单引号开始】【3 双引号开始】
+            </summary>
+        </member>
+        <member name="M:MrJi.Tool.JsonManager.SetCharState(System.Char,MrJi.Tool.JsonManager.CharState@)">
+            <summary>
+            设置字符状态(返回true则为关键词，返回false则当为普通字符处理）
+            </summary>
+        </member>
+        <member name="T:MrJi.UnityManager.AudioManager">
+            <summary>
+            音效控制类
+            </summary>
+        </member>
+        <member name="M:MrJi.UnityManager.AudioManager.Play(System.String,MrJi.Event.AudioSourceType,System.Single,System.String)">
+            <summary>
+            播放声音
+            </summary>
+            <param name="AudioClipName"></param>
+            <param name="m_AudioSourceType">声音类型</param>
+            <param name="Volume"></param>
+            <param name="Floder"></param>
+        </member>
+        <member name="M:MrJi.UnityManager.AudioManager.Play(UnityEngine.AudioClip,MrJi.Event.AudioSourceType,System.Single)">
+            <summary>
+            播放声音
+            </summary>
+            <param name="audioClip"></param>
+            <param name="m_AudioSourceType">声音类型</param>
+            <param name="Volume"></param>
+        </member>
+        <member name="M:MrJi.UnityManager.AudioManager.PlayBGM(System.String,System.Single,System.String)">
+            <summary>
+            播放背景音乐
+            </summary>
+            <param name="AudioClipName"></param>
+            <param name="Volume"></param>
+            <param name="Floder"></param>
+        </member>
+        <member name="M:MrJi.UnityManager.AudioManager.PlayBGM(UnityEngine.AudioClip,System.Single)">
+            <summary>
+            播放背景yinyue
+            </summary>
+            <param name="audioClip"></param>
+            <param name="Volume"></param>
+        </member>
+        <member name="M:MrJi.UnityManager.AudioManager.StopBGM">
+            <summary>
+            停止背景音乐
+            </summary>
+        </member>
+        <member name="P:MrJi.UnityManager.AudioManager.RecycleSource">
+            <summary>
+            回收 AudioSource
+            </summary>
+        </member>
+        <member name="T:MrJi.UnityManager.AudioSourceManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MrJi.UnityManager.GameObjectPool">
+            <summary>
+            Unity对象缓存池
+            </summary>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_Game(System.String,UnityEngine.Transform,System.String,System.Action{UnityEngine.GameObject})">
+            <summary>
+            加载对象        文件夹要在 Resources 下
+            </summary>
+            <param name="PrefabName">c</param>
+            <param name="Parent">生成预制体后，所在的父级</param>
+            <param name="Floder">Resources文件夹下的预制体所在的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_Game(System.String,UnityEngine.Transform,MrJi.Model.Data_Location,System.String,System.Action{UnityEngine.GameObject})">
+            <summary>
+            加载对象    文件夹要在 Resources 下
+            </summary>
+            <param name="PrefabName">生成预制体后，所在的父级</param>
+            <param name="Parent">生成预制体后，所在的父级</param>
+            <param name="location">位置信息</param>
+            <param name="Floder">Resources文件夹下的预制体所在的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_Game``1(UnityEngine.Transform,System.String,System.Action{``0})">
+            <summary>
+            加载对象        文件夹要在 Resources 下
+            </summary>
+            <param name="PrefabName">c</param>
+            <param name="Parent">生成预制体后，所在的父级</param>
+            <param name="Floder">Resources文件夹下的预制体所在的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_Game``1(UnityEngine.Transform,MrJi.Model.Data_Location,System.String,System.Action{``0})">
+            <summary>
+            加载对象    文件夹要在 Resources 下
+            </summary>
+            <param name="PrefabName">生成预制体后，所在的父级</param>
+            <param name="Parent">生成预制体后，所在的父级</param>
+            <param name="location">位置信息</param>
+            <param name="Floder">Resources文件夹下的预制体所在的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_GameObject(System.String,UnityEngine.Transform)">
+            <summary>
+            返回一个GameObject
+            </summary>
+            <param name="PrefabName"></param>
+            <param name="Parent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Get_GameObject(System.String,UnityEngine.Transform,MrJi.Model.Data_Location)">
+            <summary>
+            返回一个GameObject
+            </summary>
+            <param name="PrefabName"></param>
+            <param name="Parent"></param>
+            <param name="location"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.GetPool(System.String,System.String)">
+            <summary>
+            读取缓存池内存
+            </summary>
+            <param name="Prefab"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MrJi.UnityManager.GameObjectPool.Recycle(UnityEngine.GameObject,System.Action)">
+            <summary>
+            对象回收
+            </summary>
+            <param name="recycle"></param>
+            <param name="ActionEvent"></param>
+        </member>
+        <member name="T:MrJi.UnityManager.Object_CirclesPoints">
+            <summary>
+            物体绕某一点旋转
+            </summary>
+        </member>
+        <member name="P:MrJi.UnityManager.Object_CirclesPoints.distance">
+            <summary>
+            相机与虚拟体实际距离
+            </summary>
+        </member>
+        <member name="P:MrJi.UnityManager.Object_CirclesPoints.minDistance">
+            <summary>
+            最小距离
+            </summary>
+        </member>
+        <member name="P:MrJi.UnityManager.Object_CirclesPoints.maxDistance">
+            <summary>
+             最大距离
+            </summary>
+        </member>
+        <member name="M:MrJi.UnityManager.Object_CirclesPoints.Show(UnityEngine.Transform,UnityEngine.Camera,System.Boolean,System.Single,System.Single,System.Single)">
+            <summary>
+            初始化
+            </summary>
+            <param name="m_Tran"></param>
+            <param name="m_Camera"></param>
+            <param name="m_NeedDamping"></param>
+            <param name="m_Damping"></param>
+            <param name="minDistanceMultiple">最小距离倍数</param>
+            <param name="maxDistanceMultiple">最大距离倍数</param>
+        </member>
+        <member name="M:MrJi.UnityManager.Object_CirclesPoints.Show(UnityEngine.Camera,System.Boolean,System.Single,System.Single,System.Single)">
+            <summary>
+            初始化
+            </summary>
+            <param name="m_Camera"></param>
+            <param name="m_NeedDamping"></param>
+            <param name="m_Damping"></param>
+            <param name="minDistanceMultiple">最小距离倍数</param>
+            <param name="maxDistanceMultiple">最大距离倍数</param>
+        </member>
+        <member name="M:MrJi.UnityManager.Object_CirclesPoints.Dispose">
+            <summary>
+            清理
+            </summary>
+        </member>
+        <member name="M:MrJi.UnityManager.Object_CirclesPoints.ResetManager">
+            <summary>
+            复位
+            </summary>
+        </member>
+    </members>
+</doc>
